@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="row center-xs">
+    <div class="col-xs-6">
+      <h1>Todo APP using NGRX</h1>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+  <form (ngSubmit)="addTodo(f)" #f="ngForm">
+    <section>
+      <div class="row center-xs">
+        <div class="col-xs-6">
+          <input type="text" placeholder="Task" name="task" ngModel >
+        </div>
+      </div>
+
+    </section>
+
+    <section>
+      <div class="row center-xs">
+        <div class="col-xs-6">
+          <input type="text" placeholder="Date" name="date" ngModel >
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="row center-xs">
+        <div class="col-xs-6">
+          <button>Enviar</button>
+        </div>
+      </div>
+    </section>
+  </form>
+</div>
+
+<div>
+  <app-todo-list></app-todo-list>
+</div>
